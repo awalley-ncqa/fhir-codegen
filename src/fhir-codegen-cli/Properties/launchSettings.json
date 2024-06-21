@@ -109,6 +109,11 @@
       "commandName": "Project",
       "commandLineArgs": "--fhir-server-url http://server.fire.ly/ --resolve-external false --language-options OpenApi|SingleResponses=false|Metadata=true|SchemaLevel=names|MultiFile=true --output-path ..\\..\\generated\\FS-OpenApi-R4 --language OpenApi",
       "workingDirectory": "$(MSBuildProjectDirectory)"
+    },
+    "Cpp": {
+      "commandName": "Project",
+      "commandLineArgs": "--output-path ..\\..\\generated --load-r4 latest --language Cpp",
+      "workingDirectory": "$(MSBuildProjectDirectory)"
     }
   }
 }
